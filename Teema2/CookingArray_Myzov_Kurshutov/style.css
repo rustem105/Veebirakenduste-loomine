@@ -1,0 +1,27 @@
+body {
+    background-image: url('image/back.png');
+}
+.content {
+    /*float:left;
+    width: 200px;*/
+}
+.clear {
+    clear: both;
+}
+div {
+   /* width: 50%;
+    align-items: center;*/
+}
+
+img {
+    border: 10px inset Red;
+}
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: bold;
+}
