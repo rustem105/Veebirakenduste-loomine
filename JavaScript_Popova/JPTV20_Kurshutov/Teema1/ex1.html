@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Primer Javascript Message - alert, promt, confirm</title>
+        <meta charset="UTF-8"
+    </head>
+    <body>
+        <h1>Primer JavaScript - Vqvod dannqh</h1>
+        <hr>
+        <script>
+            //print message to document
+            document.write('<h2 style="color: red";>Hello, world!</h2>');
+            //----------------------
+            alert('Hello, JavaScript!');
+            //-------------promt
+            var answer;//user answer - controll
+            answer = prompt('Your favourite number', 7);
+            if(answer==null || answer=='') {
+                //Cancel or null and ok
+                document.write('<p>Not number</p>');
+            }else{
+
+                document.write('<p>Your number is '+answer+'</p>');
+            }
+
+            //------------confirm
+            var answerUser;
+            answerUser=confirm('Link - ok, cancel - stop');
+
+            if (answerUser){//ok - true
+            
+            document.write('Link: <a href="https://kutsehariduskeskus.ee">IVKHK</a>');
+            }else{
+                document.write('Thanks, no link!');
+            }
+
+
+
+
+
+        </script>
+    </body>
+</html>

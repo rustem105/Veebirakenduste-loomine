@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Examples Array</title>
+        <meta charset="UTF-8">
+    </head>
+<body>
+    <h1>Examples Array</h1>
+    <hr>
+    <h2>Countries list</h2>
+
+    <div id="Mycontent"></div>
+    <hr>
+    <div id="content">
+        <h2 id="mH1"></h2>
+    </div>
+    <hr>
+
+    <div id="intro">
+        <h2 id="mH2"></h2>
+                <ul id="list"></ul>
+    </div>
+
+    <script>
+        var countries=["Eesti","Russia","Norway","Germany"];
+
+        function printCountries(countries){
+            for (var i=0; i<countries.length;i++){
+                var p=document.createElement('p');
+                p.innerHTML=countries[i];
+                document.getElementById("Mycontent").appendChild(p);
+            }
+        }
+
+        printCountries(countries);
+
+        var country=['Eesti','Russia','Norway','Germany','France','China','Spain'];
+        var cities=['Tallinn','Jõhvi','Moscow','S-Petersburg','Oslo','Berlin','Paris'];
+        var myHeading1="Array - list countries";
+        var myHeading2="Array - list cities";
+
+        function printCountries(dataCountry){
+            for (var i=0; i<dataCountry.length;i++){
+                var string=document.createElement('span');
+                string.innerHTML=dataCountry[i]+'<br>';
+                document.getElementById("content").appendChild(string);
+            }
+        }
+
+        function printListCity(dataList){
+            for (var i=0; i<dataList.length;i++){
+                var mLi=document.createElement('li');
+                mLi.innerHTML=dataList[i];
+                document.getElementById("list").appendChild(mLi);
+            }
+        }
+
+        document.getElementById('mH1').innerHTML=myHeading1;
+        printCountries(country);
+        document.getElementById('mH2').innerHTML=myHeading2;
+        printListCity(cities);
+        </script>
+    </body>
+</html>

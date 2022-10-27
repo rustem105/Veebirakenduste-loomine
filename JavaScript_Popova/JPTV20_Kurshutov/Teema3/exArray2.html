@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+    </head>
+<body>
+    <h1>Список государств</h1>
+    <hr>
+    <div id="content"></div>
+
+    <script>
+        var country=[
+        {   state: 'Estonia',
+            capital:'Taliinn',
+            language:'estonian'
+        },
+        {   state: 'Russia',
+            capital:'Moscow',
+            language:'russian'
+        },
+        {   state: 'Norway',
+            capital:'Oslo',
+            language:'norwegian'
+        },
+        {   state: 'Germany',
+            capital:'Berlin',
+            language:'deutsch'
+        },
+    ];
+
+       function printOneCountry(oneCountry){
+        var container=document.createElement('p');
+            var text=oneCountry.state +' - '+ oneCountry.capital;
+            text+=' (official language: ' +oneCountry.language+')';
+
+            container.innerHTML=text;
+            document.getElementById('content').appendChild(container);
+       }
+       
+for (var i=0; i<country.length;i++){
+    printOneCountry(country[i]);
+}
+        
+        </script>
+    </body>
+</html>
